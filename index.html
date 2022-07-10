@@ -1,68 +1,59 @@
-<!DOCTYPE html>
-
+g<!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Home Blog</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    
+    </head>
 
-	<head>
-		<title>Weather App</title>
-		<meta charset="utf-8">
-		<link href="style.css" rel="stylesheet">
-		<script src="https://unpkg.com/vue@next"></script>
-		<script src="script.js" defer> </script>
-	</head>
+    <body>
+        <h1>Home Blog</h1>
+        <h3>By Dylan Spencer</h3>
 
-	<body style="background-color:bisque">
-		<div class="orange stuff-box shadowed">
-			<h1>Vue.JS Weather App</h1>
-		</div>
+        <div class="links">
+            <h2> Separate links: </h2>
+            <p><a href="about.html">About me </a> </p>
+            <p> <a href="index.html">Home Page</a> </p>
+            <p> <a href="plan.html">Software Development Plan</a> </p>
+            <p> <a href="techtips+css.html">Html Tech Tips</a> </p>
+            <p> <a href="techtips-css.html">Html Tech Tips without CSS</a> </p>
+            <p> <a href="style.css">CSS style sheet</a> </p>
+            <p> <a href="/debugging">Server Debugging Page</a> </p>
+            <p> <a href="/teapot">teapot</a> </p>
+            <p> <a href="/forbidden">Admin access only</a></p>
 
-		<div id="current-location" class="shadowed light_blue stuff-box shadowed">
-			<h2>Your location</h2>
-			<p v-if="!done">Loading...</p>
-			<p v-else-if="iserror">{{ error }}</p>
-			<p v-else>Your are located at {{city}}, {{region}}, {{country}} at coordinates ({{lat}}, {{lon}})</p>
-		</div>
+    
+        </div>
 
-		<div id="current-conditions" class="shadowed blue stuff-box shadowed">
-			<h2>Current conditions</h2>
-			<p v-if="done">Current weather conditions at: {{ date }}</p>
-			<p v-else-if="iserror">{{ error }}</p>
-			<p v-else >Getting data from location....</p>
-			<ul v-if="done">
-				<li>Currently: {{ temp }}F</li>
-				<li>high: {{ hi }}F</li>
-				<li>low: {{ low }}F</li>
-				<li>{{ weather }} </li>
-				<li>{{ hum }}% humidity</li>
-				<li>{{ pres }} hPa pressure</li>
-			</ul>
+        <div class="posts" style="background-color: rgb(45, 60, 190);">
+            <h2>Vacation Day</h2>
+            <h5>Dylan Spencer 7/11/2021</h5>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet nisl suscipit adipiscing bibendum est ultricies integer quis. Semper quis lectus nulla at. In massa tempor nec feugiat nisl pretium fusce id. Pellentesque elit eget gravida cum sociis natoque penatibus et. Sit amet volutpat consequat mauris nunc congue nisi vitae. Quis eleifend quam adipiscing vitae proin sagittis nisl. Netus et malesuada fames ac turpis egestas sed tempus urna. Amet purus gravida quis blandit. Scelerisque purus semper eget duis at tellus at urna condimentum. Morbi tristique senectus et netus et malesuada fames ac turpis. Pharetra diam sit amet nisl suscipit adipiscing bibendum est. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Vulputate dignissim suspendisse in est ante in. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Ullamcorper malesuada proin libero nunc consequat interdum varius. Faucibus purus in massa tempor nec feugiat. Magna fermentum iaculis eu non diam phasellus vestibulum lorem. Nibh tellus molestie nunc non.</p>
 
-		</div>
+            <p>Urna cursus eget nunc scelerisque viverra mauris in aliquam. Sit amet aliquam id diam maecenas ultricies mi eget mauris. Dui sapien eget mi proin sed libero enim sed. Aliquam vestibulum morbi blandit cursus risus at ultrices. Imperdiet dui accumsan sit amet nulla facilisi morbi. Quam id leo in vitae. At in tellus integer feugiat scelerisque varius. Consectetur adipiscing elit ut aliquam purus sit amet luctus venenatis. Amet nisl suscipit adipiscing bibendum est. Non quam lacus suspendisse faucibus interdum. Interdum consectetur libero id faucibus nisl tincidunt eget nullam non. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Et malesuada fames ac turpis egestas integer. Tincidunt ornare massa eget egestas purus viverra accumsan in. Cursus sit amet dictum sit amet justo donec enim. Purus viverra accumsan in nisl nisi scelerisque eu. Massa sed elementum tempus egestas sed.</p>
+        </div>
 
-		<div id="fourtyday" class="white stuff-box shadowed">
-			<h2>5 day 3-hour forecast</h2>
-			<p v-if="!done">Loading...</p>
-			<p v-else-if="iserror">{{ error }}</p>
-			<p v-else id="probab_totals">
-				<span style="color: white;">Neutral: {{data.neutralTotal}}</span> <span style="color: green;">Likely: {{data.likelyTotal}}</span> <span style="color: red;">Unlikely: {{data.unlikelyTotal}}</span></p>
-			
-			<div v-if="!done">Loading...</div>
+        <div class="posts" style="background-color: rgb(190, 45, 166);">
+            <h2>Loki's Birthday</h2>
+            <h5>Dylan Spencer 8/24/2021</h5>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet nisl suscipit adipiscing bibendum est ultricies integer quis. Semper quis lectus nulla at. In massa tempor nec feugiat nisl pretium fusce id. Pellentesque elit eget gravida cum sociis natoque penatibus et. Sit amet volutpat consequat mauris nunc congue nisi vitae. Quis eleifend quam adipiscing vitae proin sagittis nisl. Netus et malesuada fames ac turpis egestas sed tempus urna. Amet purus gravida quis blandit. Scelerisque purus semper eget duis at tellus at urna condimentum. Morbi tristique senectus et netus et malesuada fames ac turpis. Pharetra diam sit amet nisl suscipit adipiscing bibendum est. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Vulputate dignissim suspendisse in est ante in. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Ullamcorper malesuada proin libero nunc consequat interdum varius. Faucibus purus in massa tempor nec feugiat. Magna fermentum iaculis eu non diam phasellus vestibulum lorem. Nibh tellus molestie nunc non.</p>
 
-			<div v-for="(obj, index) in data.conditions" class="stuff-box shadowed"
-				:class="{black: obj.state == 'neutral', green: obj.state == 'likely', red: obj.state == 'unlikely' }"
-				:data-index="index"
-				@click="forecastToggle">
+            <p>Urna cursus eget nunc scelerisque viverra mauris in aliquam. Sit amet aliquam id diam maecenas ultricies mi eget mauris. Dui sapien eget mi proin sed libero enim sed. Aliquam vestibulum morbi blandit cursus risus at ultrices. Imperdiet dui accumsan sit amet nulla facilisi morbi. Quam id leo in vitae. At in tellus integer feugiat scelerisque varius. Consectetur adipiscing elit ut aliquam purus sit amet luctus venenatis. Amet nisl suscipit adipiscing bibendum est. Non quam lacus suspendisse faucibus interdum. Interdum consectetur libero id faucibus nisl tincidunt eget nullam non. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Et malesuada fames ac turpis egestas integer. Tincidunt ornare massa eget egestas purus viverra accumsan in. Cursus sit amet dictum sit amet justo donec enim. Purus viverra accumsan in nisl nisi scelerisque eu. Massa sed elementum tempus egestas sed.</p>
+        </div>
 
-				<h3>Conditions for {{obj.time}}</h3>
-				<ul>
-					<li>temperature: {{obj.temp}}F</li>
-					<li>high: {{ obj.hi }}F</li>
-					<li>low: {{ obj.low }}F</li>
-					<li>{{obj.weather}}</li>
-					<li>{{obj.humidity}}% humidity</li>
-					<li>{{obj.pressure}} hPa</li>
-				</ul>
-			</div>
-			
-		</div>
-	</body>
+        <div class="posts" style="background-color: rgb(31, 122, 43);">
+            <h2>Rose Bowl</h2>
+            <h5>Dylan Spencer 1/1/2022</h5>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet nisl suscipit adipiscing bibendum est ultricies integer quis. Semper quis lectus nulla at. In massa tempor nec feugiat nisl pretium fusce id. Pellentesque elit eget gravida cum sociis natoque penatibus et. Sit amet volutpat consequat mauris nunc congue nisi vitae. Quis eleifend quam adipiscing vitae proin sagittis nisl. Netus et malesuada fames ac turpis egestas sed tempus urna. Amet purus gravida quis blandit. Scelerisque purus semper eget duis at tellus at urna condimentum. Morbi tristique senectus et netus et malesuada fames ac turpis. Pharetra diam sit amet nisl suscipit adipiscing bibendum est. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Vulputate dignissim suspendisse in est ante in. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Ullamcorper malesuada proin libero nunc consequat interdum varius. Faucibus purus in massa tempor nec feugiat. Magna fermentum iaculis eu non diam phasellus vestibulum lorem. Nibh tellus molestie nunc non.</p>
+
+            <p>Urna cursus eget nunc scelerisque viverra mauris in aliquam. Sit amet aliquam id diam maecenas ultricies mi eget mauris. Dui sapien eget mi proin sed libero enim sed. Aliquam vestibulum morbi blandit cursus risus at ultrices. Imperdiet dui accumsan sit amet nulla facilisi morbi. Quam id leo in vitae. At in tellus integer feugiat scelerisque varius. Consectetur adipiscing elit ut aliquam purus sit amet luctus venenatis. Amet nisl suscipit adipiscing bibendum est. Non quam lacus suspendisse faucibus interdum. Interdum consectetur libero id faucibus nisl tincidunt eget nullam non. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Et malesuada fames ac turpis egestas integer. Tincidunt ornare massa eget egestas purus viverra accumsan in. Cursus sit amet dictum sit amet justo donec enim. Purus viverra accumsan in nisl nisi scelerisque eu. Massa sed elementum tempus egestas sed.</p>
+        </div>
+        
+
+    </body>
 </html>
+
