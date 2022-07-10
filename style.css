@@ -2,42 +2,16 @@ body {
     background-color: rgb(48, 47, 47);
     color: whitesmoke;
     font-size: medium;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-ol li:nth-child(2n){
-    background-color: orangered;    
-}
-ol li:nth-child(2n + 1){
-    background-color: rgb(143, 40, 6);    
-}
-
-div {
-    background-color: darkred;
-}
-
-.links {
-    background-color: rgb(250, 190, 69);
     font-family: Arial, Helvetica, sans-serif;
-    color:wheat;
 }
 
-.posts {
-    padding: 50px;
-    margin: 25px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+ 
+.title {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: brown;
+    border-radius: 15px;
+    width: fit-content;
+    text-align: center;
+    margin: auto; 
+    padding: auto;
 }
-
-.cheatsheet {
-    padding: 25px;
-    margin: 25px;
-}
-
-ul li:nth-child(2n){
-    background-color:darkolivegreen;
-}
-
-ul li:nth-child(2n + 1){
-    background-color:darkslategray;
-}
-
