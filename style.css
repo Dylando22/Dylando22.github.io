@@ -7,11 +7,76 @@ body {
 
  
 .title {
-    font-family:Arial, Helvetica, sans-serif;
-    background-color: brown;
+    background-color: darkred;
     border-radius: 15px;
+    border: solid black;
     width: fit-content;
     text-align: center;
     margin: auto; 
     padding: auto;
+}
+
+#topLeft {
+    left: 0;
+    top: 0;
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#mainDiv {
+    width:85%;
+    float:right
+}
+
+#menuDiv {
+    float: left;
+    width: 15%;
+}
+
+.square-box p{
+    background-color: brown;
+    width: auto;
+    height: inherit;
+    padding: 2px;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border-top: solid black 3px;
+    border-right: solid black 3px;
+    border-bottom: solid black 3px;
+
+}
+
+.square-box p:hover {
+    background-color: lightcoral;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a:hover {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.text-post {
+    margin:25px;
+    padding:25px;
+    border-radius: 15px;
+    background-color: darkred;
+    font-size: 20px;
+    text-align:left;
+    border: solid black;
+    border-width: 5px;
+}
+
+ol li:nth-child(2n){
+    background-color: coral;    
+}
+ol li:nth-child(2n + 1){
+    background-color: darkred;    
 }
