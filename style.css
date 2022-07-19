@@ -7,13 +7,58 @@ body {
 
  
 .title {
-    background-color: darkred;
+    background-color: brown;
     border-radius: 15px;
     border: solid black;
     width: fit-content;
     text-align: center;
     margin: auto; 
     padding: auto;
+}
+
+.work-entry {
+    background-color: darkred;
+    border-radius: 15px;
+    border: solid black;
+    width: 95%;
+    float: left;
+    margin: 15px; 
+    padding: 15px;
+}
+
+.work-entry p {
+    float: left;
+    text-align: left;
+    font-size: 14pt;
+    border-top: solid black;
+    border-bottom: solid black;
+    width:100%;
+    margin-top: 5px;
+    
+}
+
+.work-entry h3{
+    margin: auto;
+    float: left;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: black;
+    border-radius: 15px;
+    border: solid black;
+    width: fit-content;
+    text-align: center;
+}
+
+
+.work-entry h4{
+    float: right;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: rgb(60, 0, 0);
+    border-radius: 15px;
+    border: solid black;
+    font-size: 12pt;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 #topLeft {
@@ -67,16 +112,41 @@ a:hover {
     margin:25px;
     padding:25px;
     border-radius: 15px;
-    background-color: darkred;
+    background-color: brown;
     font-size: 20px;
     text-align:left;
     border: solid black;
     border-width: 5px;
 }
 
+ol li {
+    margin: 5px;
+    padding: 5px; 
+    border: solid black 3px;
+    list-style-type: none;  
+}
+
 ol li:nth-child(2n){
     background-color: coral;    
 }
 ol li:nth-child(2n + 1){
-    background-color: darkred;    
+    background-color: darkred; 
+
+}
+
+ul li{
+    list-style-type:none;
+    text-align: left;
+    margin: 5px;
+    padding: 5px; 
+    border: solid black 3px;  
+}
+
+ul li:nth-child(2n){
+    background-color: coral; 
+
+}
+ul li:nth-child(2n + 1){
+    background-color: darkred;  
+
 }
