@@ -1,6 +1,6 @@
 var GeoApiKey = "0d172580-bc12-11ec-bbc5-c3af7d486175";
-var WeatherApiKey = "9678346b0f9056019429f13c34d7d53d"
-let GeoURL = "https://api.freegeoip.app/json/?apikey=" + GeoApiKey;
+var WeatherApiKey = "1697e0cf372f8362630d3ae9b16b4527"
+let GeoURL = "hahahttps://api.ipbase.com/v2/info?apikey=" + GeoApiKey;
 var lat;
 var lon;
 
@@ -96,11 +96,11 @@ const vm2 = app2.mount('#fourtyday');
     .then(response => response.json() )
     .then(json =>{
         let locationData = json;
-        lat = locationData['latitude'];
-        lon = locationData['longitude'];
-        vm0.city = locationData['city'];
-        vm0.region = locationData['region_name'];
-        vm0.country = locationData['country_name'];
+        lat = locationData['data']['location']['latitude'];
+        lon = locationData['data']['location']['longitude'];
+        vm0.city = locationData['data']['location']['city']['name'];
+        vm0.region = locationData['data']['location']['region']['name'];
+        vm0.country = locationData['data']['location']['country']['name'];
         vm0.lat = lat;
         vm0.lon = lon;
         vm0.time = "today";
