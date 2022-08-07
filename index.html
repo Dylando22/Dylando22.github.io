@@ -3,57 +3,182 @@
     <head>
         <meta charset="utf-8"/>
         <title>Dyl's Webpage</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="style.css" />
-		<script src="https://unpkg.com/vue@next"></script>
+        <link rel="stylesheet" type="text/css" href="style/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="js/index.js"></script>
 
-    
     </head>
 
     <body>
-		<div>
-      <div id="menuDiv">
-        <img src="docs/assets/images/profile.PNG" id="topLeft" alt="Profile Picture">
-        <div class="square-box">
-        <a href="index.html" ><p>HOME</p></a>
-        <a href="templates/about.html" ><p>ABOUT ME</p></a>
-        <a href="templates/history.html" ><p>WORK HISTORY</p></a>
-        <a href="templates/flights.html" ><p>FLIGHT PRICE APP</p></a>
-        <a href="templates/weather.html" target="_blank"><p>5 DAY FORCAST APP</p></a>
-        <a href="templates/calculator.html"  target="_blank"></a><p>ALL JS CALCULATOR</p></a>
-        <a href="mailto: dyl2elite@gmail.com" ><p>EMAIL ME</p></a>
-        <a href="docs/assets/'Dylan Spencer Resume'.pdf" download="Dylan Spencer Resume"><p>DOWNLOAD RESUME</p></a>
-      </div>
-    </div>
-    <div id="mainDiv">
-		  <h1 class="title">&nbsp;WELCOME&nbsp; </h1>
-      <div class="title">
-       <p> This is the webpage of Dylan Spencer. Here are the features on the side:</p>
-        <ul>
-          <li>About Me -- Introductory page about Dylan Spencer</li>
-          <li>Work History -- A list of all the places I have worked</li>
-          <li>Flight price App -- this is a web application I'm currently working on 
-            checks flight prices and data out of Utah from the various Airports in Utah. 
-            I'm still working on the API and data transfer, so there is just an example of
-            what it will look like in the end right now.
-          </li>
-          <li>5 day forecast -- This is a Web app that uses vue.js and shows the 5 day forcast 
-            for the area of the IP address of the user. It shows the weather perdictions for in 3 hour 
-            increments.
-          </li>
-          <li>All JS calculator -- This is a calculator App made completely out of javascript and no html. 
-            The html file calls the javascript code and it does the rest. 
-          </li>
-          <li>Email me -- Opens up your default email editor to send me an email for job offers and suggestions</li>
-          <li>Download resume -- You probably found this through my resume, but if you needed a copy you can download it 
-            with this link. It was last updated March 2022.
-          </li>
-        </ul>
-      
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="docs/assets/resume.pdf" download="Dylan Spencer Resume">Download Resume</a></li>
+                <li><a href="mailto: dyl2elite@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                <li class="dropDown" style="float:right;"><a href="javascript:void(0)" class="dropButton">Projects</a>
+                    <div class="dropdown-content">
+                        <a href="templates/calculator.html" target="_blank">Full JS calculator</a>
+                        <a href="templates/weather.html" target="_blank">Weather App</a>
+                        <a href="templates/flights.html" target="_blank">Flights App</a>
+                    </div>
+                </li>
 
-      </div>    
-    </div>
-	</div>
+            </ul>
+        </nav>
+        <RightsideBar id="RightList">
+            <p>List of Skills:</p>
+            <ul>
+                <li>Html</li>
+                <li>Css</li>
+                <li>Javascript</li>
+                <li>Python</li>
+            </ul>
+        </RightsideBar>
+        <LeftSideBar>
+            <img src="docs/assets/images/profile.PNG" alt="profile picutre">
+            <ul>
+                <li><button id='homeButton' class="active" onclick="goHome()">Home</button></li>
+                <li><button id="aboutButton" onclick="goAboutMe()">About Me</button></li>
+                <li><button id='workButton' onclick="goHistory()" >Work History</button></li>
+                <li><button id='jokeButton' onclick="getJoke()">Joke of the Day</button></li>
+            </ul>
+        </LeftSideBar>
+        <header>
+            <h1 class="post">Dylan Spencer</h1>
+            <h4>Software Engineer/CS Major</h4>
+        </header>
+
+        <main id="HomePage">
+            <p> Dylan Spencer is a Computer Science Major currently studying
+                at Utah State University. He is interested in Web Development, Cyber Security and UX/UI design. Dylan plans to finish his undergraduate 
+            in the Spring of 2024</p>
+        </main>
+        <main id="AboutPage">
+        <div id="tech" class="post">
+            <h4>Technical Skills:</h4>
+            <ol>
+              <li>Java</li>
+              <li>Python</li>
+              <li>C++</li>
+              <li>C</li>
+              <li>Html</li>
+              <li>Css</li>
+              <li>Javascript</li>
+              <li>React and Vue.js</li>
+            </ol>
+          </div>
+          <div id="achievments" class="post" >
+            <h4 >Fun facts & Achievments:</h4>
+            <ol>
+              <li>Current 3.95 GPA</li>
+              <li>2nd Place in USU CTF competition</li>
+              <li>Was the assemblies SBO officer in Highschool</li>
+              <li>Severed as a missionary for the Chruch of Jesus Christ of Latter-Day Saints in Argentina</li>
+              <li>Speaks fulent spanish</li>
+              <li>loves playing pickelball</li>
+            </ol>
+          </div>
+        </div>
+        <div id="truth" class="post">
+          <h4>2 Truths and 1 Lie:</h4>
+          <div>
+              <ol>
+                  <li>I Got married at 20 years old</li>
+                  <li>I Have never broken a bone</li>
+                  <li>I hate rollercoasters</li>
+              </ol>
+              <p>Guess the Lie:</p>
+              <form>
+                  <select id="vote-choice">
+                      <option>#1</option>
+                      <option>#2</option>
+                      <option>#3</option>
+                  </select>
+                  <input id="submit" type="button" value="vote" onclick="printMessage();"></input>
+              </form>
+                <p id="answer">Waiting for answer..</p>
+          </div>
+        </main>
+
+        <main id="HistoryPage">
+            <h1>WORK HISTORY</h1>
+
+            <div class ="post">
+                <h3>Hill Air Force Base:</h3>
+                <h4>June 2022 - Current</h4>
+                <p>Title: Software engineer intern</p>
+                <p>Description: Worked on the SKOLL mission planning team that designed the front-end and back-end for a 
+                    web application that F-35 pilots use to schedule and plan radio frequencies for 
+                    different flights and aircraft. Developed in React, Typescript and Java building Apps.
+                </p>
+            </div>
+
+            <div class ="post">
+                <h3>USU Facilities</h3>
+                <h4>October 2021 - June 2022</h4>
+                <h4>August 2020 - November 2020</h4>
+                <p>Title: Facilities cleaning specialist</p>
+                <p>Description: Worked at Utah State University as a janitor for facilities. I was 
+                    assigned to the specturm cluster. Did detailing, bathrooms, vaccumming and basic cleaning duties
+                </p>
+            </div>
+
+            <div class ="post">
+                <h3>IFIT Customer Service:</h3>
+                <h4>November 2020 - October 2021</h4>
+                <p>Title: Customer Service Representative</p>
+                <p>Description: Worked at a call center, taking calls from IFIT customers. Troubleshooted 
+                    with members about their fitness equipment and did what was necessary to get their equipment fixed.
+                </p>
+            </div>
+
+            <div class ="post">
+                <h3>Walmart Distribution Center:</h3>
+                <h4>March 2020 - Augus 2020</h4>
+                <p>Title: Case slot warehouse worker</p>
+                <p>Description: Worked on the conveyor belt throwing packages to trailers
+                    to be shipped to walmarts around Utah. 
+                </p>
+            </div>
+
+            <div class ="post">
+                <h3>HomeTown Pizza:</h3>
+                <h4> September 2016 - Janurary 2017</h4>
+                <p>Title: Pizza Delivery guy</p>
+                <p>Description: Worked at a local pizza place and delivered pizzas
+                </p>
+            </div>
+
+            <div class ="post">
+                <h3>The Shack:</h3>
+                <h4> March 2015 - August 2017</h4>
+                <p>Title: Shave Ice Barista / Manager</p>
+                <p>Description: Worked at a shave ice shack making shave ice. Also helped manage the 
+                    business and trained multiple employees
+                </p>
+            </div>
+        </main>
+
+        <main id="JokePage">
+                <p>This is a simple API call that gets a random joke every day. If the joke is not loading, make sure you have internet connection. It may take a minute or two 
+                    for the joke to pop up so please be patient. </p>
+                <p class="post" id="joke">Please wait while Joke is loading....</p>
+        </main>
+
+        <footer>
+            <ul>
+                <li><a href="https://www.facebook.com/dylan.spencer.524" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/dyl.of.pickles/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/dylan-spencer-550003248?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BL0wsnG0cROWn%2FjLOUEHFeg%3D%3D" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/Dylando22/" target="_blank"><i class="fa fa-github"></i></a></li>
+            </ul>
+
+        </footer>
+
+
 	</body>
 </html>
 

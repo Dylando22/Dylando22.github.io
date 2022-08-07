@@ -1,0 +1,320 @@
+body{
+    display: grid;
+    
+    grid-template-areas: 
+        'nav nav nav'
+        'menu header menu2'
+        'menu main menu2'
+        'menu footer footer'
+        ;
+    gap: none;
+    background-color: black;
+    color: white;
+
+}
+
+i{
+    color: white;
+}
+
+nav {
+    grid-area: nav;
+    position: fixed;
+    width: -moz-available;
+    
+}
+
+header {
+    padding-top: 40px;
+    grid-area: header;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif Gothic Medium', 'Arial Narrow', Arial, sans-serif';
+}
+footer{
+    background-color: black;
+    color: white;
+    grid-area: footer;
+    text-align: center;
+    display: inline-block
+
+}
+
+footer ul {
+    list-style-type: none;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+}
+
+
+footer li{
+    display: inline-flex;
+    margin-left: 5%;
+    margin-right: 5%;
+ 
+}
+
+footer a {
+    padding: 12px;
+
+}
+footer .fa {
+    padding: 5px;
+    font-size: 30px;
+    text-decoration: none;
+  }
+
+footer .fa:hover {
+    opacity: 0.7;
+}
+main{
+    grid-area: main;
+    height: auto;
+    margin-bottom: 2px;
+    font-size: 16pt;
+
+}
+
+main p {
+    margin: 15px;
+    padding: 15px;
+}
+img {
+    grid-area: image;
+    border-radius: 50%;
+    width:250px;    
+    height:250px;
+    padding: 25px;
+
+}
+header h1 {
+    text-align: center;
+    font-size: 50pt;
+    font-weight: 50;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 10px;
+}
+header h4 {
+    font-size: 10pt;
+    padding: 5px;
+    width:fit-content;
+    height: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+header p {
+    margin: 5px;
+    padding:10px;
+    text-align: left;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif
+
+}
+RightSideBar {
+    padding: 15px;
+    margin: 10px;
+    padding-top: 40px;
+    grid-area: menu2;
+    display: none;
+
+}
+
+RightSideBar ul {
+    list-style-type: none;
+}
+
+LeftSideBar{
+    grid-area: menu;
+    padding-top: 40px;
+    width: 250px;
+}
+LeftSideBar ul{
+    list-style-type: none;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+LeftSideBar ul button {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    color:white;
+    border: none;
+    background-color: black;
+}
+
+
+LeftSideBar li button:hover:not(.active) {
+    color: white;
+    background-color: rgb(145, 92, 92);
+}
+
+LeftSideBar li button.active{
+    background-color: darkred;
+    color: white;
+
+}
+
+
+nav ul {
+    list-style-type: none;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+
+}
+
+
+nav li{
+    display: inline-block;
+    color: white;
+    float: left;
+}
+
+nav li a, .dropButton {
+    display:inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+
+}
+
+.dropButton {
+    float: right;
+}
+
+nav li a:hover:not(.active), .dropDown:hover .dropButton {
+    color: white;
+    background-color: rgb(145, 92, 92);
+    font-style: italic;
+    margin: none;
+
+}
+
+nav li a.active{
+    background-color: darkred;
+    color: white;
+    font-style: italic;
+
+}
+
+nav li.dropDown {
+    display: inline-block;
+}
+
+nav .dropdown-content {
+    visibility: hidden;
+    display: block;
+    position:absolute;
+    background-color: black;
+    min-width: 160px;
+    right:0px;
+  }
+  
+nav .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+
+.dropDown:hover .dropdown-content {
+    visibility: visible;
+    
+  }
+
+.post {
+    border: solid white;
+    border-radius: 15px;
+    color: white;
+    font-weight: 300;
+    padding: 15px;
+    margin: 15px;
+}
+
+#AboutPage{
+    display: grid;
+    grid-template-areas: 
+    'techskills achievments truth'
+    ;
+    gap: none;
+    display:none;
+}
+
+#tech {
+    grid-area: techskills;
+    height:fit-content;
+}
+
+#achievments {
+    grid-area: achievments;
+    height:fit-content;
+
+}
+
+#truth {
+    grid-area: truth;
+    height:fit-content;
+
+}
+
+#HistoryPage {
+    display: none;
+}
+
+#JokePage {
+    display: none;
+    width: 100%;
+}
+
+@media only screen and (max-width: 650px) {
+    body{
+        display: grid;
+        grid-template-areas: 
+            'nav'
+            'menu'
+            'header'
+            'main'
+            'footer'
+            ;
+        gap: none;
+        background-color: black;
+        color: white;
+    
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+        width: auto;
+    }
+    RightSideBar {
+        display: none;
+    }
+    LeftSideBar {
+        width: auto;
+    }
+    #AboutPage{
+        display: grid;
+        grid-template-areas: 
+        'techskills'
+        'achievments'
+         'truth'
+        ;
+        gap: none;
+        display:none;
+    }
+
+}

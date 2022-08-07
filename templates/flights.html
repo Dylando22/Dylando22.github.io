@@ -16,22 +16,26 @@
 		<div class="Form-Box">
 			<form>
 				<label>Choose start point</label>
-				<select>
-					<option>SLC International</option>
-					<option>Provo</option>
-					<option>Ogden Regional</option>
+				<select id="from">
+					<option id="SLC">SLC International</option>
+					<option id="PVU">Provo</option>
+					<option id="OGD">Ogden Regional</option>
 				</select>
 				<label >Enter a Destination: </label>
-				<select>
-					<option>Arizona</option>
-					<option>Nevada</option>
-					<option>California</option>
-					<option>Colorado</option>
-					<option>Idaho</option>
-					<option>Oregon</option>
-					<option>Washington</option>
+				<select id ="to">
+					<option id="AZ">Arizona</option>
+					<option id="NV">Nevada</option>
+					<option id="CA">California</option>
+					<option id="CO">Colorado</option>
+					<option id="ID">Idaho</option>
+					<option id="OR">Oregon</option>
+					<option id="WA">Washington</option>
 				</select>
-				<button class="button">FLY!</button>
+				<label >Start Date: </label>
+				<input type="date" id="start">
+				<label >End Date: </label>
+				<input type="date" id="end">
+				<input class="button" type="button" onClick="clickFly();" value="FLY!">
 				
 
 			</form>
@@ -44,7 +48,7 @@
 			<p>Arrival: John-Wayne 6/22/22 9:45 P.M (MST)</p>
 			<a href="delta.com">Buy Tickets</a>
 		</div>
-		<a href="../index.html">Back HOME</a>
+		<a class="back-button" href="../index.html">Back HOME</a>
 
 	</body>
 </html>

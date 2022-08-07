@@ -52,3 +52,18 @@
     background:   rgb(75,75,75);
     box-shadow: 1px 1px 2px rgba(200,200,0,0.4);
 }
+
+
+.back-button {
+    background-color: darkgray;
+    width:fit-content;
+    height: inherit;
+    padding: 5px;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border: solid black 3px;
+	border-radius: 15px;
+	color: black;
+	
+}

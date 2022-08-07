@@ -27,7 +27,8 @@
 
 .button {
     background-color: #469c4a; /* Green */
-    border-radius: 25px;
+    border-radius: 15px;
+    border: solid black;
     color: rgb(9, 9, 9);
     text-align: center;
     text-decoration: none;
@@ -35,3 +36,19 @@
     font-size: 16px;
     margin-left: 30px;
   }
+
+  .back-button {
+    background-color: darkgray;
+    width:fit-content;
+    height: inherit;
+    padding: 5px;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border: solid black 3px;
+	border-radius: 15px;
+    text-decoration: none;
+    color: black;	
+}
+
+  

@@ -1,6 +1,6 @@
 var GeoApiKey = "0d172580-bc12-11ec-bbc5-c3af7d486175";
 var WeatherApiKey = "1697e0cf372f8362630d3ae9b16b4527"
-let GeoURL = "hahahttps://api.ipbase.com/v2/info?apikey=" + GeoApiKey;
+let GeoURL = "https://api.ipbase.com/v2/info?apikey=" + GeoApiKey;
 var lat;
 var lon;
 
